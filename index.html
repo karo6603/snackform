@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SNACKS</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <h1>Add a snack</h1>
+
+        <h2>Info about the snack</h2>
+        <section class="info">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="snackName"
+            size="20"
+            placeholder="Like.. chocolate?"
+            required
+          />
+          <label for="taste">What does it taste like?</label>
+          <input
+            type="text"
+            name="snackTaste"
+            placeholder="Maybe.. sweet?"
+            required
+          />
+          <label for="price">
+            How much does it cost?
+          </label>
+
+          <input
+            type="text"
+            name="snackPrice"
+            placeholder="Perhaps.. 20 kr?"
+            required
+          />
+        </section>
+
+        <section class="rateIt">
+          <h2>Rating</h2>
+          <h3>Rate the snack from 1 to 10!</h3>
+          <select name="rating" id="rating">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+          </select>
+        </section>
+
+        <button type="submit">Add your snack</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
